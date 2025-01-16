@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Music App!"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/clip_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="153dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/clip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Play Clip 1" />
+
+        <Button
+            android:id="@+id/clip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Clip 2" />
+
+        <Button
+            android:id="@+id/clip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Clip 3" />
+
+        <Button
+            android:id="@+id/clip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Clip 4" />
+
+        <Button
+            android:id="@+id/clip5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Clip 5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/service_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/start_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Service" />
+
+        <Button
+            android:id="@+id/stop_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Service" />
+
+        <Button
+            android:id="@+id/pauseClip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause Clip" />
+
+        <Button
+            android:id="@+id/resumeClip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume Clip" />
+
+        <Button
+            android:id="@+id/stopClip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Clip" />
+
+    </LinearLayout>
+
+</RelativeLayout>
